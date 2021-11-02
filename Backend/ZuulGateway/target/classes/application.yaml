@@ -1,0 +1,16 @@
+server:
+   port: 8100
+      
+spring:
+  application:
+    name: ZuulGateway
+    
+zuul:
+   routes:
+     PRODUCT1-APP:
+        serviceId: product1
+     ORDER-APP:
+        serviceId: Orderservice
+     LOGIN-APP:
+        serviceId: Loginservice
+        
